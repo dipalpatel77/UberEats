@@ -10,37 +10,37 @@ package ubereats;
  * @author 1894343
  */
 public class Restaurant {
-    String Name;
-    String Address;
-    int Phone;
+    String name;
+    String address;
+    int phone;
     
-    public Restaurant(String Name, String Address, int Phone){
-        this.Name=Name;
-        this.Address=Address;
-        this.Phone=Phone;
+    public  Restaurant(String new_Name, String new_Address, int new_Phone){
+        name=new_Name;
+        address=new_Address;
+        phone=new_Phone;
     }
     
-    public void setName(String name){
-        this.Name=name;
+    public void setname(String new_Name){
+        name=new_Name;
     }
     
-    public String getName(){
-        return Name;
+    public String getname(){
+        return name;
     }
     
-    public void setAddress(String address){
-        this.Address=address;
+    public void setaddress(String new_Address){
+       address=new_Address;
     }
     
-    public String getAddress(){
-        return Address;
+    public String getaddress(){
+        return address;
     }
     
-    public void setPhone(int phone){
-        this.Phone=phone;
+    public void setphone(int new_Phone){
+       phone=new_Phone;
     }
     
-    public int getPhone(){
-        return Phone;
+    public int getphone(){
+        return phone;
     }
 }
