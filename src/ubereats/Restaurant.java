@@ -14,6 +14,7 @@ public class Restaurant {
     String address;
     int phone;
     
+    Menu mn = new Menu("Drinks", "Bar");
     public  Restaurant(String new_Name, String new_Address, int new_Phone){
         name=new_Name;
         address=new_Address;

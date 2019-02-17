@@ -13,6 +13,7 @@ public class Category {
     String name;
     int id;
     
+    Menu mn = new Menu("brownie", "desert");
     public Category(String newName , int newId){
        name = newName;
         id = newId;

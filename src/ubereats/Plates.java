@@ -5,6 +5,8 @@
  */
 package ubereats;
 
+import java.util.Date;
+
 /**
  *
  * @author 1895277
@@ -14,6 +16,8 @@ public class Plates {
     String description;
     int price;
     
+    Order ord = new Order(new Date(), 28);
+    Menu mn = new Menu("Beverages", "Food");
     public Plates(String newName , String newDescription , int newPrice){
         name = newName;
         description = newDescription;
