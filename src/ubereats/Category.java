@@ -13,15 +13,15 @@ public class Category {
     String name;
     int id;
     
-    public Category(String name , int id){
-        this.name = name;
-        this.id = id;
+    public Category(String newName , int newId){
+       name = newName;
+        id = newId;
     }
-      public void setname(String name) {
-        this.name = name;
+      public void setname(String newName) {
+        name = newName;
     }
-       public void setid(int id) {
-        this.id = id;
+       public void setid(int newId) {
+        id = newId;
     }
        public String getname() {
         return name;
