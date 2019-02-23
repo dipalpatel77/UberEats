@@ -5,26 +5,27 @@
  */
 package ubereats;
 
+import java.util.Date;
+
 /**
  *
  * @author 1895314
  */
 public class Customer extends Person
 {
-    int id;
+    String id;
     String type;
     
-    public Customer(int newId, String newType, String newFname, String newLname, String newAddress, String newPhone) {
-        super(newFname, newLname, newAddress, newPhone);
-        id = newId;
+    public Customer(Date newId, String newType, String newFname, String newLname, String newAddress, String newPhone) {
+        super(newId,newFname, newLname, newAddress, newPhone);
         type = newType;
     }
     
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int newId) {
+    public void setId(String newId) {
         id = newId;
     }
 
@@ -35,4 +36,10 @@ public class Customer extends Person
     public void setType(String newType) {
         type = newType;
     } 
+     public void display()
+    {
+        System.out.println("Id is: " +super.id + "\nType is: " + type);
+        super.display();
+    }
+     
 }
