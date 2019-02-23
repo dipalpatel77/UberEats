@@ -20,5 +20,7 @@ public class UberEats {
     {
         Restaurant res = new Restaurant(new Date(), "Nish", "Montreal", 3246187);
         res.display();
+        Customer cust=new Customer(new Date(), "Veg", "Nish", "Gupta", "Montreal", "3246187");
+        cust.display();
     }  
 }
