@@ -10,15 +10,24 @@ package ubereats;
  * @author 1894343
  */
 public class Restaurant {
+    int id;
     String name;
     String address;
     int phone;
     
-    Menu mn = new Menu("Drinks", "Bar");
+    Menu mn;
     public  Restaurant(String new_Name, String new_Address, int new_Phone){
         name=new_Name;
         address=new_Address;
         phone=new_Phone;
+    }
+    
+    public void setId(int newId){
+        id=newId;
+    }
+    
+    public int getId(){
+        return id;
     }
     
     public void setname(String new_Name){

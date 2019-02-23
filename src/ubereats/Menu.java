@@ -13,8 +13,8 @@ public class Menu {
     String name;
     String type;
     
-    Category ct = new Category("Breakfast", 12);
-    Restaurant rest = new Restaurant("Indian Village", "Parc", 514267876);
+    Category ct;
+    Restaurant rest;
     public Menu(String nName, String nType){
         name=nName;
         type=nType;

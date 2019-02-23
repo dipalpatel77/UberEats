@@ -16,8 +16,8 @@ public class Plates {
     String description;
     int price;
     
-    Order ord = new Order(new Date(), 28);
-    Menu mn = new Menu("Beverages", "Food");
+    Order ord;
+    Menu mn;
     public Plates(String newName , String newDescription , int newPrice){
         name = newName;
         description = newDescription;

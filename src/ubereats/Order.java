@@ -16,9 +16,9 @@ public class Order {
     Date Order_date;
     float Amount;
     
-    Customer cust = new Customer(12, "Veg", "Dipal", "Patel", "Montreal", "5146759847");
-    Driver dr = new Driver("4-stroke", "12388230", "Jay", "Shah", "Ontorio", "5147867867");
-    Plates pl = new Plates("Pizza", "8-inch", 14);
+    Customer cust;
+    Driver dr;
+    Plates pl;
     
     public Order(Date dAte, float amnt)
     {
