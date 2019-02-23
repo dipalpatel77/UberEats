@@ -81,6 +81,6 @@ public class Menu {
     }
     public void display()
     {
-        System.out.println("Id is: " + id + "\nName is: " + name + "\n Name: " + name + "\nType is: " + type);
+        System.out.println("Id is: " + id + "\n Name: " + name + "\nType is: " + type);
     }
 }
