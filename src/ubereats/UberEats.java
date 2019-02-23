@@ -5,6 +5,8 @@
  */
 package ubereats;
 
+import java.util.Date;
+
 /**
  *
  * @author 1895269
@@ -16,6 +18,7 @@ public class UberEats {
      */
     public static void main(String[] args) 
     {
-        
+        Restaurant res = new Restaurant(new Date(), "Nish", "Montreal", 3246187);
+        res.display();
     }  
 }
