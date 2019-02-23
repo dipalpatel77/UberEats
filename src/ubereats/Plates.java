@@ -13,72 +13,70 @@ import java.util.Date;
  * @author 1895277
  */
 public class Plates {
+
     String id;
     String name;
     String description;
     int price;
-    
+
     Order ord;
     Menu mn;
-    public Plates(Date newId , String newName , String newDescription , int newPrice){
+
+    public Plates(Date newId, String newName, String newDescription, int newPrice) {
         id = createId(newId, newName);
         name = newName;
         description = newDescription;
         price = newPrice;
     }
-      public void setname(String newName) {
+
+    public void setname(String newName) {
         name = newName;
     }
-        public void setdescription(String newDescription) {
+
+    public void setdescription(String newDescription) {
         name = newDescription;
-    }  
-        public void setprice(int newPrice) {
+    }
+
+    public void setprice(int newPrice) {
         price = newPrice;
     }
-         public String getname() {
+
+    public String getname() {
         return name;
     }
-          public String getdescription() {
+
+    public String getdescription() {
         return description;
     }
-           public int getprice() {
+
+    public int getprice() {
         return price;
     }
-             public String createId(Date id, String name)
-    {
+
+    public String createId(Date id, String name) {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MMM-dd");
         String dt = sdf.format(id);
         String[] date = dt.split("-");
         String formatedDate = date[0].substring(2);
         formatedDate += "-" + date[1];
-        if(Integer.parseInt(date[2])%2==0)
-        {
+        if (Integer.parseInt(date[2]) % 2 == 0) {
             formatedDate += "-" + "E";
-        }
-        else
-        {
+        } else {
             formatedDate += "-" + "O";
         }
-        if(name.equals(""))
-        {
+        if (name.equals("")) {
             formatedDate += "-" + "XX";
-        }
-        else if(name.length()==1)
-        {
+        } else if (name.length() == 1) {
             formatedDate += "-" + name.toUpperCase() + "X";
-        }
-        else if(name.length()==2)
-        {
+        } else if (name.length() == 2) {
             formatedDate += "-" + name.toUpperCase();
-        }
-        else
-        {
-            formatedDate += "-" + name.substring(0, 1).toUpperCase() + name.substring(name.length()-1).toUpperCase();
+        } else {
+            formatedDate += "-" + name.substring(0, 1).toUpperCase() + name.substring(name.length() - 1).toUpperCase();
         }
         return formatedDate;
     }
-    public void display()
-    {
+
+    public void display() {
         System.out.println("Id is: " + id + "\nName is: " + name + "\nDescription is: " + description + "\nPrice is: " + price);
     }
 }

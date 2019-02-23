@@ -11,10 +11,10 @@ package ubereats;
  */
 public class Category {
     String name;
-    int id;
+    String id;
     
     Menu mn;
-    public Category(String newName , int newId){
+    public Category(String newName , String newId){
        name = newName;
         id = newId;
     }
