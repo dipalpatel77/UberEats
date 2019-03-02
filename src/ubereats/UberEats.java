@@ -24,5 +24,7 @@ public class UberEats {
         cust.display();
         Order ord = new Order(new Date(), (float) 55.3);
         ord.display();
+        OrderDetails ordD = new OrderDetails(new Date(),4);
+        ordD.display();
     }  
 }
