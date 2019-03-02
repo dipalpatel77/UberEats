@@ -39,12 +39,12 @@ public class OrderTest {
      @Test
     public void createIdTest()
     {
-        System.out.println("Test id for createId method in Person Class");         
+        System.out.println("Test id for createId method in Order Class");         
         
         Date date = new Date();
-        String name = "Dipal";
-        String expectedResult = "19-Mar-E-DL";
-        String realResult = ubereats.Person.createId(date, name);
+        String name = "";
+        String expectedResult = "19-Mar-E-XX";
+        String realResult = ubereats.Order.createId(date, name);
         assertEquals(expectedResult, realResult);
     }
     // TODO add test methods here.
