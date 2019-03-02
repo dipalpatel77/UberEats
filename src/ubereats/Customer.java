@@ -38,7 +38,7 @@ public class Customer extends Person
     public void setType(String newType) {
         type = newType;
     } 
-     public String createId(Date id, String name)
+     public static String createId(Date id, String name)
     {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MMM-dd");
         String dt = sdf.format(id);

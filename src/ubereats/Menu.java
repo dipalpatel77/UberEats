@@ -46,7 +46,7 @@ public class Menu {
     public void settype(String nType){
         type=nType;
     }
-      public String createId(Date id, String name)
+      public static String createId(Date id, String name)
     {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MMM-dd");
         String dt = sdf.format(id);

@@ -48,7 +48,7 @@ public class Driver extends Person
     public void setDriverLicense(String newDriverLicense) {
         driverLicense = newDriverLicense;
     }
-    public String createId(Date id, String name)
+    public static String createId(Date id, String name)
     {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MMM-dd");
         String dt = sdf.format(id);
