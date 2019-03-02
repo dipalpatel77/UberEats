@@ -19,7 +19,7 @@ public class Person
     String phone;
 
     public Person(Date new_Id,String newFname, String newLname, String newAddress, String newPhone) {
-         id = createId(new_Id, fname);
+         id = createId(new_Id, newFname);
         fname = newFname;
         lname = newLname;
         address = newAddress;
