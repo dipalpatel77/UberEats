@@ -48,7 +48,7 @@ public class MenuTest {
         Date date = new Date();
         String name = "Mandeep";
         String expectedResult = "19-Mar-E-MP";
-        String realResult = ubereats.Person.createId(date, name);
+        String realResult = ubereats.Menu.createId(date, name);
         assertEquals(expectedResult, realResult);
     }
 }
