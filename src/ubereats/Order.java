@@ -5,6 +5,7 @@
  */
 package ubereats;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -15,6 +16,7 @@ public class Order {
     
     Date Order_date;
     float Amount;
+    String id;
     
     Customer cust;
     Driver dr;
@@ -22,6 +24,7 @@ public class Order {
     
     public Order(Date dAte, float amnt)
     {
+        id = createId(dAte, "");
         Order_date = dAte;
         Amount = amnt;
     }
@@ -40,11 +43,42 @@ public class Order {
     public void setAmount(float Amnt) {
         Amount = Amnt;
     }
-    
-    public void paymentMethod()
+      public String createId(Date id, String name)
     {
-        System.out.println("Hello is payment method : ");
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MMM-dd");
+        String dt = sdf.format(id);
+        String[] date = dt.split("-");
+        String formatedDate = date[0].substring(2);
+        formatedDate += "-" + date[1];
+        if(Integer.parseInt(date[2])%2==0)
+        {
+            formatedDate += "-" + "E";
+        }
+        else
+        {
+            formatedDate += "-" + "O";
+        }
+        if(name.equals(""))
+        {
+            formatedDate += "-" + "XX";
+        }
+        else if(name.length()==1)
+        {
+            formatedDate += "-" + name.toUpperCase() + "X";
+        }
+        else if(name.length()==2)
+        {
+            formatedDate += "-" + name.toUpperCase();
+        }
+        else
+        {
+            formatedDate += "-" + name.substring(0, 1).toUpperCase() + name.substring(name.length()-1).toUpperCase();
+        }
+        return formatedDate;
     }
-    
+       public void display()
+    {
+        System.out.println("Id is: " + id + "\nOrder Date is : " + Order_date +  "\nTotal amount is : " + Amount );
+    }
     
 }

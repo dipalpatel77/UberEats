@@ -22,5 +22,7 @@ public class UberEats {
         res.display();
         Customer cust=new Customer(new Date(), "Veg", "Nish", "Gupta", "Montreal", "3246187");
         cust.display();
+        Order ord = new Order(new Date(), (float) 55.3);
+        ord.display();
     }  
 }
