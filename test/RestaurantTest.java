@@ -47,8 +47,8 @@ public class RestaurantTest {
         
         Date date = new Date();
         String name = "Mandeep";
-        String expectedResult = "19-Mar-E-MH";
-        String realResult = ubereats.Person.createId(date, name);
+        String expectedResult = "19-Mar-E-MP";
+        String realResult = ubereats.Restaurant.createId(date, name);
         assertEquals(expectedResult, realResult);
     }
 }
