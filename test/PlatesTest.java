@@ -43,7 +43,7 @@ public class PlatesTest {
         
         Date date = new Date();
         String name = "Indian";
-        String expectedResult = "19-Mar-E-IN";
+        String expectedResult = "19-Mar-O-IN";
         String realResult = ubereats.Plates.createId(date, name);
         assertEquals(expectedResult, realResult);
     }

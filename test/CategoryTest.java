@@ -43,7 +43,7 @@ public class CategoryTest {
         
         Date date = new Date();
         String name = "Veg";
-        String expectedResult = "19-Mar-E-VG";
+        String expectedResult = "19-Mar-O-VG";
         String realResult = ubereats.Category.createId(date, name);
         assertEquals(expectedResult, realResult);
     }

@@ -44,7 +44,7 @@ public class CustomerTest {
         
         Date date = new Date();
         String name = "Zied";
-        String expectedResult = "19-Mar-E-ZD";
+        String expectedResult = "19-Mar-O-ZD";
         String realResult = ubereats.Customer.createId(date, name);
         assertEquals(expectedResult, realResult);
     }

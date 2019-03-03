@@ -20,21 +20,30 @@ public class UberEats {
     {
         Restaurant res = new Restaurant(new Date(), "Nish", "Montreal", 3246187);
         res.display();
+        System.out.println("-------------------");
         Customer cust=new Customer(new Date(), "Veg", "Nish", "Gupta", "Montreal", "3246187");
         cust.display();
+        System.out.println("-------------------");
         Order ord = new Order(new Date(), (float) 55.3);
         ord.display();
+        System.out.println("-------------------");
         OrderDetails ordD = new OrderDetails(new Date(),4);
         ordD.display();
+        System.out.println("-------------------");
         Person per = new Person(new Date(), "Dipal", "Patel", "Gujrat", "5146897865");
         per.display();
+        System.out.println("-------------------");
         Driver dr = new Driver(new Date(), "123743", "234jb34934j", "Jay", "Shah", "Gujrat", "5146211699");
         dr.display();
+        System.out.println("-------------------");
         Plates pt = new Plates(new Date(), "Thali", "Lunch", 10);
         pt.display();
+        System.out.println("-------------------");
         Category ct = new Category("dinner", new Date());
         ct.display();
+        System.out.println("-------------------");
         Menu mn = new Menu(new Date(), "Thai", "Veg");
         mn.display();
+        System.out.println("-------------------");
     }  
 }

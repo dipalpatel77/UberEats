@@ -43,7 +43,7 @@ public class DriverTest {
         
         Date date = new Date();
         String name = "Jameel";
-        String expectedResult = "19-Mar-E-JL";
+        String expectedResult = "19-Mar-O-JL";
         String realResult = ubereats.Driver.createId(date, name);
         assertEquals(expectedResult, realResult);
     }
