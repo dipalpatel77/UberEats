@@ -26,5 +26,15 @@ public class UberEats {
         ord.display();
         OrderDetails ordD = new OrderDetails(new Date(),4);
         ordD.display();
+        Person per = new Person(new Date(), "Dipal", "Patel", "Gujrat", "5146897865");
+        per.display();
+        Driver dr = new Driver(new Date(), "123743", "234jb34934j", "Jay", "Shah", "Gujrat", "5146211699");
+        dr.display();
+        Plates pt = new Plates(new Date(), "Thali", "Lunch", 10);
+        pt.display();
+        Category ct = new Category("dinner", new Date());
+        ct.display();
+        Menu mn = new Menu(new Date(), "Thai", "Veg");
+        mn.display();
     }  
 }
